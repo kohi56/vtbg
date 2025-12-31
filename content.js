@@ -31,11 +31,13 @@
   style.textContent = `
 .dark [class*="bg-"] {
   background-color: rgba(20, 20, 20, 0.15) !important;
+    transition-property: color, box-shadow, border-color !important;
 }
 
 .dark [class*="bg-"]:not(img):not(svg):not(video):not(canvas) {
   backdrop-filter: saturate(120%);
   -webkit-backdrop-filter: saturate(120%);
+  overflow: hidden;
 }
     `;
     document.head.appendChild(style);
