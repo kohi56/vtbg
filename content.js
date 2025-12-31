@@ -37,8 +37,8 @@
 .dark [class*="bg-"]:not(img):not(svg):not(video):not(canvas) {
   backdrop-filter: saturate(120%);
   -webkit-backdrop-filter: saturate(120%);
-  overflow: hidden;
 }
     `;
     document.head.appendChild(style);
+
 })();
